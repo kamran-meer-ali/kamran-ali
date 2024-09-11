@@ -1,0 +1,292 @@
+
+.container-fluid{
+    background-color: rgb(37, 34, 34);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+   /* top: 45px; */
+   width: 100%;
+}
+.logo img{
+   width: 120px;
+   height: 90px;
+}
+.store{
+    text-decoration: none;
+    font-size: 22px;
+    outline: none;
+}
+.store a{
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    position: relative;
+    top: 45px;
+}
+.btn-order{
+   /* display: flex; */
+   justify-content: space-between;
+   position: relative;
+   top: 15px;
+   padding: 20px;
+}
+.online{
+    cursor: pointer;
+    background: transparent;
+    border-radius: 20px;
+    color: white;
+    border: 2px solid red;
+    height: 45px;
+    width: 140px;
+}
+.online:hover{
+    background-color: red;
+    animation-delay: 2s;
+}
+@media (max-width: 1024px) {
+    .logo img {
+        width: 20px;
+    }
+
+    .store {
+        font-size: 20px; /* Slightly smaller font size */
+        margin: 0 0px; /* Reduced margin */
+    }
+
+    .btn-order {
+        gap: 5px; /* Reduce gap between buttons */
+    }
+
+    .online {
+        height: 40px; /* Slightly smaller button */
+        width: 120px; /* Slightly smaller button */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+        align-items: center; /* Center content horizontally */
+        padding: 10px; /* Adjust padding */
+    }
+
+    .logo {
+        margin-bottom: 0; /* Margin below the logo */
+        left: 0;
+    }
+
+    .logo img {
+        width: 20px; /* Further reduce logo size */
+    }
+
+    .store {
+        font-size: 8px; /* Further reduce font size */
+        margin: 2px; /* Margin adjustments for vertical stacking */
+    }
+
+    .btn-order {
+        gap: 5px; /* Reduce gap between buttons */
+    }
+
+    .online {
+        height: 35px; /* Further reduce button height */
+        width: 100px; /* Further reduce button width */
+        font-size: 12px; /* Further reduce font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 60px; /* Further reduce logo size */
+        position: relative;
+        left: -93px;
+    }
+    .logo{
+        position: relative;
+        left: -23px;
+    }
+
+    .store {
+        position: relative;
+        left: -24px;
+        font-size: 12px; /* Further reduce font size */
+        /* gap: 2px; */
+         /* Minimal margin */
+    }
+
+    .btn-order {
+        gap: 5px; /* Minimal gap between buttons */
+        display: block;
+    }
+
+    .online {
+        height: 30px; /* Further reduce button height */
+        width: 80px; /* Further reduce button width */
+        font-size: 10px; /* Further reduce font size */
+    }
+}
+/* Bootstrap */
+.bootstrap{
+    /* border: 2px solid black; */
+    position: relative;
+    top: 0;
+}
+.box{
+    display: flex;
+    background-color: white;
+    gap: 10px;
+    padding-top: 22px;
+    padding-right: 44px;
+    padding-left: 44px;
+    box-shadow: #000d33;
+}
+.box .box1{
+ box-shadow: -30px 0px 20px rgba(0,0,0,0.3);
+}
+.box .box2{
+ box-shadow: -30px 0px 20px rgba(0,0,0,0.3);
+}
+.box .box3{
+ box-shadow: -30px 0px 20px rgba(0,0,0,0.3);
+}
+.box .box4{
+ box-shadow: -30px 0px 20px rgba(0,0,0,0.3);
+}
+.box1{
+    border: 1px solid rgb(253, 253, 253);
+    height: 200px;
+    width: 480px;
+    background-color: rgb(138, 180, 248);
+    cursor: pointer;
+}
+.box2{
+    border: 1px solid rgb(253, 253, 253);
+    height: 200px;
+    width: 480px;
+    background-color: rgb(138, 180, 248);
+    cursor: pointer;
+
+}
+.box3{
+    border: 1px solid rgb(255, 254, 254);
+    height: 200px;
+    width: 480px;
+    background-color: rgb(138, 180, 248);
+    cursor: pointer;
+}
+.box4{
+    border: 1px solid rgb(253, 253, 253);
+    height: 200px;
+    width: 480px;
+    background-color: rgb(138, 180, 248);
+    outline: none;
+    cursor: pointer;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: -92px;
+    text-decoration: underline;
+    color: darkblue;
+    font-size: 15px;
+}
+.heading h1{
+    color:  #000d33;
+    font-size: 25px;
+}
+.box1 .fa-solid{
+    color: #fff;
+    font-size: 44px;
+    margin-left: 193px;
+    position: relative;
+    top: 22px;
+}
+.box2 .fa-solid{
+    color: #fff;
+    font-size: 44px;
+    margin-left: 193px;
+    position: relative;
+    top: 22px;
+}
+.box3 .fa-solid{
+    color: #fff;
+    font-size: 44px;
+    margin-left: 193px;
+    position: relative;
+    top: 22px;
+}
+.box4 .fa-solid{
+    color: #fff;
+    font-size: 44px;
+    margin-left: 193px;
+    position: relative;
+    top: 22px;
+}
+@media (max-width: 1024px) {
+    .box {
+        padding: 20px; /* Reduced padding for medium screens */
+    }
+
+    .box1, .box2, .box3, .box4 {
+        height: 180px; /* Reduced height */
+        width: 100%; /* Full width for boxes */
+        max-width: 400px; /* Maximum width */
+    }
+
+    .box1 .heading, .box2 .heading, .box3 .heading, .box4 .heading {
+        font-size: 18px; /* Reduced font size for medium screens */
+    }
+
+    .box1 .heading h1, .box2 .heading h1, .box3 .heading h1, .box4 .heading h1 {
+        font-size: 22px; /* Reduced font size for headings */
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        padding: 15px; 
+        flex-direction: column; 
+    }
+    img{
+        flex-basis: 100%;
+    }
+
+    .box1, .box2, .box3, .box4 {
+        height: 180px; /* Further reduced height */
+        width: 100%; /* Full width for boxes */
+        max-width: 300px; /* Maximum width */
+    }
+
+    .box1 .heading, .box2 .heading, .box3 .heading, .box4 .heading {
+        font-size: 16px; /* Further reduced font size */
+    }
+
+    .box1 .heading h1, .box2 .heading h1, .box3 .heading h1, .box4 .heading h1 {
+        font-size: 20px; /* Further reduced font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        padding: 10px; /* Minimal padding */
+    }
+
+    .box1, .box2, .box3, .box4 {
+        height: 180px; /* Further reduced height */
+        width: 100%; /* Full width for boxes */
+        max-width: 280px; /* Maximum width */
+    }
+
+    .box1 .heading, .box2 .heading, .box3 .heading, .box4 .heading {
+        font-size: 14px; /* Further reduced font size */
+    }
+
+    .box1 .heading h1, .box2 .heading h1, .box3 .heading h1, .box4 .heading h1 {
+        font-size: 18px; /* Further reduced font size */
+    }
+}
