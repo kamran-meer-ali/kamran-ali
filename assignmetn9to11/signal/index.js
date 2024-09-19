@@ -1,8 +1,6 @@
 function showSignalMessage() {
-    // Prompt user for the traffic signal color
     let color = prompt("Enter the color of the traffic signal (Red, Yellow, Green):").toLowerCase();
     
-    // Determine the message based on the color
     let message;
     switch (color) {
         case 'red':
@@ -18,6 +16,5 @@ function showSignalMessage() {
             message = "Invalid color. Please enter 'Red', 'Yellow', or 'Green'.";
     }
 
-    // Display the message
     document.getElementById('message').textContent = message;
 }
